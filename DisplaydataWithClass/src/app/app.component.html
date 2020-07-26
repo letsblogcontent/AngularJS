@@ -1,0 +1,20 @@
+<div>
+
+
+  <h1>{{title}}</h1>
+
+  <ul *ngFor =" let c of cars">
+
+<li> {{c}}</li>
+
+  </ul>
+  <h1>Display data with Class</h1>
+
+  <ul *ngFor =" let n of newcars">
+
+    <li style="color:red" *ngIf ="n.average < 7 "> {{n.name}}</li>
+    
+      </ul>
+
+  
+</div>
