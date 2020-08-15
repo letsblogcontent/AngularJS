@@ -1,8 +1,12 @@
 <div>
 <h1> {{ title }} </h1>
 <ul *ngFor = "let c of cars ">
-
-  <li *ngIf = " c == 'nexon' "> {{c}}</li>
+<h1> Car Name:{{c}} </h1>
+  <li *ngIf = " c == 'nexon' ">
+    <h2 style="color: brown;">
+  This is new car:  {{c}}
+  </h2>
+  </li>
 </ul>
 
 </div>
