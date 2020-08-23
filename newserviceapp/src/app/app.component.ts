@@ -6,7 +6,7 @@ import { TeserviceService } from './teservice.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  provider : [ TeserviceService]
+  providers : [ TeserviceService]
 })
 export class AppComponent {
 
