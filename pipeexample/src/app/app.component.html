@@ -1,0 +1,36 @@
+<h2> Uppercase Pipe Example</h2>
+
+<p>{{ title | uppercase }}</p>
+
+<h2> lowercase Pipe Example</h2>
+<p>{{ title | lowercase }}</p>
+
+<h2> currency Pipe Example </h2>
+
+<p>{{  num| currency:'$' }}</p>
+
+<h2> percent Pipe Example</h2>
+<p>{{ num | percent:'5.4-6' }}</p>
+
+<span style="color: red;"> NOte: 5 means 5 digit on left hand side of decimal  and 4-6 means minimum 4 digit after decimal and maximum 6 digits ...output will be 01,000.0000%</span>
+
+
+<h2> date Pipe Example</h2>
+<p> birthday is {{ birthday | date }}</p>
+<span style="color: red;"> Below date pipe has given format so it will convert date in given format</span>
+<p> birthday is {{ birthday | date:"MM/dd/yy" }}</p>
+
+<h2> date Pipe Example</h2>
+<span style="color: red;"> Below date pipe is used with uppercase pipe so we can use multiple pipes for formatting text</span>
+<p>{{  birthday | date:'fullDate' | uppercase}}</p>
+<h2> Decimal Pipe Example</h2>
+
+<h2> Decimal/Number Pipe Example</h2>
+<span style="color: red;"> This will show 3 digits at left hand side of decimal and 1-5 digits after decimal at right side </span>
+<p>{{ num | number:'3.1-5' }}</p>
+
+<h2> titlecase Pipe Example</h2>
+<p>{{title |titlecase }}</p>
+
+
+
