@@ -13,8 +13,7 @@ export class ParentComponent implements OnInit {
   }
 
 
-  changename(name:string)
-  {
+  changename(name: string) {
     this.currentname = name;
   }
 }

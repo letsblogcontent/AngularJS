@@ -11,16 +11,16 @@ export class ChildComponent implements OnInit {
 
   constructor() { }
   @Input()
-  name : string;
+  name: string;
 
   @Output() newName = new EventEmitter<string>();
 
- 
+
   ngOnInit() {
   }
 
-  changeName(value: string) {
-    console.log('value is' +value);
+  changeNameFromChild(value: string) {
+    console.log('value is' + value);
     this.newName.emit(value);
   }
 
