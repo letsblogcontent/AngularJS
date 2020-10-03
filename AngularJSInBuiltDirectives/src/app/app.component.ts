@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularJSInBuiltDirectives';
-  flag = false;
 
-  changeClass() {
-    this.flag = true;
-  }
 }

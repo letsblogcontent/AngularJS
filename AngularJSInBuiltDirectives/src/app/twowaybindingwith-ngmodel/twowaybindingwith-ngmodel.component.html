@@ -1,0 +1,21 @@
+<p>One and Two way Binding with NG Model</p>
+<div class="card-panel   blue ">
+    <h2 [style.color]='twowaycolor'>Two way Binding</h2>
+    Enter Color : <input [(ngModel)]='twowaycolor'>
+    <br>
+    Color value is: {{twowaycolor}}
+
+    <br>
+    <button (click)="click()"> CLickme</button>
+
+
+</div>
+<div class="card-panel   blue lighten-3">
+    <h2 [style.color]='onewaycolor'>One way Binding</h2>
+    Enter Color : <input [ngModel]='onewaycolor'>
+    <br>
+    Color value is: {{onewaycolor}}
+
+    <br>
+    <button (click)="clickme()"> CLickme</button>
+</div>

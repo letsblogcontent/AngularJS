@@ -3,7 +3,6 @@ export class Car {
     average: number;
 
     constructor( name , average) {
-
         this.name = name;
         this.average = average;
     }

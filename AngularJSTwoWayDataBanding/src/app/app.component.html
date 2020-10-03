@@ -1,9 +1,24 @@
+<div class="card-panel   blue lighten-3">
+  <h3>One Way Data Binding with  Parent Child</h3>
+<app-onewaybinding [childcolor]="parentcolor"></app-onewaybinding>
 
+<h4>Parent Color:{{parentcolor}}</h4>
+<h3 [style.color]="parentcolor" > Parent Component</h3>
+</div>
 
 <div class="card-panel   blue lighten-3">
   <h3>Two Way Data Binding with  Parent Child</h3>
 <app-twowaypropertychange [(childcolor)]="parentcolor"></app-twowaypropertychange>
 
+<h4>Parent Color:{{parentcolor}}</h4>
+<h3 [style.color]="parentcolor" > Parent Component</h3>
+</div>
+
+
+<div class="card-panel   blue lighten-3">
+  <h3>Two Way Data Binding with combination of   Parent Child Using [] property binding  and () event binding </h3>
+
+<app-twowaypropertychange [childcolor]="fontSizePx" (childcolorChange)="parentcolor=$event"></app-twowaypropertychange>
 <h4>Parent Color:{{parentcolor}}</h4>
 <h3 [style.color]="parentcolor" > Parent Component</h3>
 </div>
